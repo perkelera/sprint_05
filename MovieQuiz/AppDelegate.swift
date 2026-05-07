@@ -6,6 +6,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        for family in UIFont.familyNames {
+            for font in UIFont.fontNames(forFamilyName: family) {
+                print(font)
+            }
+        }
         return true
     }
 
