@@ -1,7 +1,6 @@
-
 import Foundation
 struct QuizQuestion {
-    let image: String
+    let imageName: Data
     let text: String
     let correctAnswer: Bool
 }
